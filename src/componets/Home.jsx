@@ -13,10 +13,10 @@ const HomePage = () => {
             WELCOME TO <span>AWSCC Free Summer Camps!</span>
           </h1>
           <p>
-            At AWSCC, we believe coding education should be available for all at no cost
+            At AWSCC, we believe coding education should be available for ALL at no cost
             .
           </p>
-          <Link to="/signup" className="btn">Sign Up Now!</Link>
+          <Link to="/about" className="btn">About the Camp</Link>
         </div>
       </header>
 
@@ -27,10 +27,10 @@ const HomePage = () => {
             OUR <span>MISSION</span>
           </h2>
           <p>
-            Providing extensive Unity Game development education for kids ages 9-14. Our world-class insructors 
-            have passion for teaching and sharing our skills at no cost providing the community this essential service.
+            Giving back to our community by sharing our skillls in Unity game Development
+            with youth ages 9-14 for FREE. This is our IB CAS (Community, Activity, and Service) Project! 
           </p>
-          <Link to="/about" className="btn">About Us</Link>
+          <Link to="/meet" className="btn">Meet The Team</Link>
         </div>
         <img src="summercampkids.jpg" alt="Kids enjoying activities" />
       </section>

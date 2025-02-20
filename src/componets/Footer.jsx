@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2023 Unity Summer Camp. All rights reserved.</p>
+      <p>&copy; 2025 AWSCC Summer Camp. All rights reserved.</p>
     </footer>
   );
 };
