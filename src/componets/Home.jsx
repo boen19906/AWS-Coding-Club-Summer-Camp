@@ -10,12 +10,17 @@ const HomePage = () => {
       <header className="hero">
         <div className="hero-content">
           <h1>
-            WELCOME TO <span>AWSCC Free Summer Camps!</span>
+            WELCOME TO <span>DevQuest Free Summer Camps!</span>
           </h1>
           <p>
-            At AWSCC, we believe coding education should be available for ALL at no cost
-            .
+            We have 10 spots left! Free Unity Game Dev Camp for Youth 9-14!
+            
           </p>
+          <h2>
+            6/30 - 7/4 
+            
+          </h2>
+
           <Link to="/about" className="btn">About the Camp</Link>
         </div>
       </header>
@@ -28,7 +33,7 @@ const HomePage = () => {
           </h2>
           <p>
             Giving back to our community by sharing our skillls in Unity game Development
-            with youth ages 9-14 for FREE. This is our IB CAS (Community, Activity, and Service) Project! 
+            with youth ages 9-14 for FREE. This is an IB CAS (Community, Activity, and Service) Project! 
           </p>
           <Link to="/meet" className="btn">Meet The Team</Link>
         </div>

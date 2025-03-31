@@ -1,70 +1,184 @@
+/* About Hero Section */
+.team-hero {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 42, 92, 0.85), rgba(0, 42, 92, 0.85)), url('/about-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-top: 50px;
+}
+
+.team-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to right bottom, transparent 49%, #f9f9f9 50%);
+}
+
+.team-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.team-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.team-content h1 span {
+  color: #ffd700;
+  display: block;
+  font-size: 3.2rem;
+  margin-top: 5px;
+}
+
+.hero-tagline p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* Meet the Team Section */
+.team-section {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 span {
+  color: #0066cc; /* Use your primary accent color here */
+}
+
+.heading-underline {
+  height: 4px;
+  width: 70px;
+  background-color: #0066cc; /* Use your primary accent color here */
+  margin: 0 auto;
+}
+
 .team-container {
-    margin-top: 2rem;
-    text-align: center;
-    padding: 3rem 1rem;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    color: #222;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.team-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Update just the team member image styling */
+.team-member-image {
+  flex: 0 0 150px;
+  padding: 15px;
+}
+
+.team-member-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* This makes the images circular */
+  object-fit: cover;
+  border: 3px solid #0066cc; /* Optional: adds a border around the circular image */
+}
+
+.team-member-info {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  text-align: left;
+}
+
+.team-member-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #0066cc;
+}
+
+.team-member-role {
+  font-size: 1.1rem;
+  color: #ffd700; /* Use your primary accent color here */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.team-member-bio {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
   }
   
-  h1 {
+  .hero-content h1 span {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+  }
+  
+  .hero-tagline p {
+    font-size: 1.2rem;
   }
   
   .team-member {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0;
+    flex-direction: column;
+  }
+  
+  .team-member-image {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .team-member-info {
     padding: 1.5rem;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
   }
   
-  .team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 1.5rem;
+  .section-heading h2 {
+    font-size: 2rem;
   }
-  
-  .team-member.left {
-    flex-direction: row;
-  }
-  
-  .team-member.right {
-    flex-direction: row-reverse;
-  }
-  
-  .info {
-    text-align: left;
-  }
-  
-  h2 {
-    margin: 0;
-    font-size: 1.8rem;
-  }
-  
-  p {
-    margin: 0.5rem 0 0;
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .team-member {
-      flex-direction: column !important;
-      text-align: center;
-    }
-  
-    .team-member img {
-      margin: 0 0 1rem 0;
-    }
-  }
-  
+}

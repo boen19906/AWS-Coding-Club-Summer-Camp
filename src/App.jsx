@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/meet" element={<MeetTheTeam />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path="https://docs.google.com/forms/d/e/1FAIpQLScMeZJtDlrKpl_VkCrvmLamIXm54-BAkQaak4EWFll94_oVig/viewform?usp=sharing" element={<SignUp />} />
           <Route path="/about" element={<About/>} />
         </Routes>
         <Footer />
